@@ -1,0 +1,138 @@
+:root {
+  --primary-color: #CE9797;
+  --secondary-color: #F96262;
+  --tertiary-color: #413A3A;
+  --main-font: 'Josefin Sans', sans-serif;
+}
+
+html {
+  font-family: var(--main-font);
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 84px;
+  background-color: #fffdfe;
+}
+
+header img {
+  width: 103px;
+  height: 22px;
+  margin: 32px 0 0 32px;
+}
+
+main, section {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+main {
+  min-width: 375px;
+  min-height: 100vh;
+  justify-content: flex-start;
+  background-image: linear-gradient(to bottom, #ffffff, #fefdfe, #fefafc, #fff7f9, #fff5f5);
+}
+
+section {
+  justify-content: center;
+}
+
+section div {
+  padding: 0 32px;
+}
+
+section div h1 {
+  font-weight: 300;
+  font-size: 4.1rem;
+  line-height: 4.1rem;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin-top: 66px;
+}
+
+section div h1 span {
+  font-weight: 600;
+  color: var(--tertiary-color);
+}
+
+section div p {
+  margin-top: 3px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  text-align: center;
+  color: var(--primary-color);
+  padding: 0 8px;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  position: relative;
+}
+
+.input-email {
+  width: 311px;
+  height: 48px;
+  padding-left: 25px;
+  border-radius: 50px;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 1rem;
+  color: var(--primary-color);
+  border: 1px solid #dfc9cc;
+  background-color: #fff5f5;
+}
+
+.input-submit {
+  position: absolute;
+  right: 0;
+  width: 64px;
+  height: 48px;
+  border-radius: 50px;
+  border: none;
+  background-image: linear-gradient(to right, #f8bfbf, #f6b2b2, #f4a6a5, #f19999, #ee8c8c);
+}
+
+.input-submit:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to right, #fddbdc, #fcd6d7, #fbd1d2, #f9cdcd, #f8c8c8);
+  box-shadow: -1px 5px 7px 0px rgb(235, 192, 191, 1);
+}
+
+.error-icon {
+  position: absolute;
+  top: 12px;
+  right: 75px;
+  /*visibility: hidden;*/
+}
+
+.error-message {
+  padding-left: 25px;
+  font-size: 1.2rem;
+  text-align: left;
+  color: var(--secondary-color);
+  /*visibility: hidden;*/
+}
+
+footer {
+  background-color: #fff5f5;
+}
+.attribution, .attribution a {
+  font-weight: 400;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.attribution a:hover {
+  font-weight: 400;
+  color: var(--tertiary-color);
+}
