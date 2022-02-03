@@ -56,48 +56,22 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- JavaScript
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+This is my first project with JavaScript and I'm quite happy with how it turned out. I've been doing some JS exercises for a while, and I was doubting myself and my abilities but I'm really happy right now. 
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I'm pretty sure my script can be shortened by like 20 lines, and I hope to come back to this project in the future and improve the code. 
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Also I know the mobile-media-queries file is extremely long considering it's a simple project, but past me decided it was a good idea to use position absolute. Present me disagrees completely with her.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Form validation using javascript](https://dev.to/javascriptacademy/form-validation-using-javascript-34je) - I wouldn't have been able to do the JS for this challenge without this article.
+- [Curso de Manipulación del DOM](https://platzi.com/clases/dom/) - This course helped me understand how DOM manipulation works.
 
 ## Author
 

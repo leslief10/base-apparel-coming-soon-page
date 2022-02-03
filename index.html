@@ -10,6 +10,7 @@
   <title>Frontend Mentor | Base Apparel coming soon page</title>
   <link rel="stylesheet" href="./assets/css/normalize.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/mobile-media-queries.css">
 </head>
 <body>
   <header>
@@ -17,20 +18,24 @@
   </header>
   <main>
     <section>
-      <img src="./assets/images/hero-mobile.jpg" alt="hero image">
-      <div>
-        <h1>We're <span>coming soon</span></h1>
+      <div class="hero-image-container">
+        <img src="./assets/images/hero-mobile.jpg" alt="hero image">
+      </div>
+      <div class="content-container">
+        <h1>We're<br><span>coming<br> soon</span></h1>
         <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
         <form action="/" method="post" id="form" class="form">
-          <label for="email" class="label-email">
-            <input type="email" name="email" id="email"  class="input-email" placeholder="Email Address">
-            <button type="submit" class="input-submit">
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 1l8.836 8.836L1 18.671"/></svg>
-            </button>
+          <label for="email"></label>
+          <div class="input-container">
+            <input type="text" name="email" id="email"  class="input-email" placeholder="Email Address">
+            <input type="submit" value="" class="input-submit">
             <img src="./assets/images/icon-error.svg" id="error-icon" class="error-icon" alt="error icon">
-          </label>
+            <div class="confirmation-messages-container">
+              <p id="error-message" class="error-message">Please provide a valid email</p>
+              <p id="success-message" class="success-message">Thank you for signing up, you will be receiving a confirmation email shortly.</p>
+          </div>
         </form>
-        <p id="error-message" class="error-message">Please provide a valid email</p>
+        </div>
       </div>
     </section>
   </main>

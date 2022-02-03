@@ -25,7 +25,7 @@ header img {
   margin: 32px 0 0 32px;
 }
 
-main, section {
+main, section, .hero-image-container {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -42,11 +42,11 @@ section {
   justify-content: center;
 }
 
-section div {
+.content-container {
   padding: 0 32px;
 }
 
-section div h1 {
+.content-container h1 {
   font-weight: 300;
   font-size: 4.1rem;
   line-height: 4.1rem;
@@ -57,12 +57,12 @@ section div h1 {
   margin-top: 66px;
 }
 
-section div h1 span {
+.content-container h1 span {
   font-weight: 600;
   color: var(--tertiary-color);
 }
 
-section div p {
+.content-container p {
   margin-top: 3px;
   font-weight: 400;
   font-size: 1.4rem;
@@ -75,14 +75,19 @@ section div p {
 .form {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin-top: 40px;
+  
+}
+
+.input-container, .input-email {
   position: relative;
+  width: 311px;
+  height: 48px;
 }
 
 .input-email {
-  width: 311px;
-  height: 48px;
-  padding-left: 25px;
+  padding: 0 25px;
   border-radius: 50px;
   font-weight: 300;
   font-size: 1.3rem;
@@ -90,16 +95,23 @@ section div p {
   color: var(--primary-color);
   border: 1px solid #dfc9cc;
   background-color: #fff5f5;
+  z-index: 1;
 }
 
 .input-submit {
   position: absolute;
+  top: 0;
   right: 0;
   width: 64px;
   height: 48px;
   border-radius: 50px;
   border: none;
-  background-image: linear-gradient(to right, #f8bfbf, #f6b2b2, #f4a6a5, #f19999, #ee8c8c);
+  background-image: 
+  url('../images/icon-arrow.svg'), 
+  linear-gradient(to right, #f8bfbf, #f6b2b2, #f4a6a5, #f19999, #ee8c8c);
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 3;
 }
 
 .input-submit:hover {
@@ -112,15 +124,26 @@ section div p {
   position: absolute;
   top: 12px;
   right: 75px;
-  /*visibility: hidden;*/
+  width: 24px;
+  height: 24px;
+  z-index: 2;
 }
 
-.error-message {
-  padding-left: 25px;
+.confirmation-messages-container {
+  width: 311px;
+  position: relative;
+  padding: 0 10px 0 17px;
+}
+
+.confirmation-messages-container .error-message, .confirmation-messages-container .success-message {
   font-size: 1.2rem;
   text-align: left;
   color: var(--secondary-color);
-  /*visibility: hidden;*/
+}
+
+.confirmation-messages-container .success-message {
+  line-height: 2rem;
+  color: var(--primary-color);
 }
 
 footer {
