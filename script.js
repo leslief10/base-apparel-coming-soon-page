@@ -4,9 +4,9 @@ const errorMessage = document.querySelector('#error-message');
 const successMessage = document.querySelector('#success-message');
 const errorIcon = document.querySelector('#error-icon');
 
-//errorMessage.style.visibility = 'hidden';
-//successMessage.style.visibility = 'hidden';
-//errorIcon.style.visibility = 'hidden';
+errorMessage.style.visibility = 'hidden';
+successMessage.style.visibility = 'hidden';
+errorIcon.style.visibility = 'hidden';
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();

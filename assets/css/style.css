@@ -33,17 +33,28 @@ main, section, .hero-image-container {
 
 main {
   min-width: 375px;
-  min-height: 100vh;
+  min-height: 100%;
   justify-content: flex-start;
   background-image: linear-gradient(to bottom, #ffffff, #fefdfe, #fefafc, #fff7f9, #fff5f5);
 }
 
 section {
   justify-content: center;
+  margin-bottom: 50px;
+}
+
+.hero-image-container {
+  width: 100%;
+  height: calc(100% - 65%);
+}
+
+.hero-image-container .hero-image-desktop {
+  display: none;
 }
 
 .content-container {
   padding: 0 32px;
+  margin-bottom: 40px;
 }
 
 .content-container h1 {
@@ -62,7 +73,7 @@ section {
   color: var(--tertiary-color);
 }
 
-.content-container p {
+.content-container > p {
   margin-top: 3px;
   font-weight: 400;
   font-size: 1.4rem;
@@ -96,6 +107,10 @@ section {
   border: 1px solid #dfc9cc;
   background-color: #fff5f5;
   z-index: 1;
+}
+
+.input-email:focus {
+  color: var(--tertiary-color);
 }
 
 .input-submit {
@@ -135,6 +150,10 @@ section {
   padding: 0 10px 0 17px;
 }
 
+.confirmation-messages-container .error-message {
+  margin-top: 10px;
+}
+
 .confirmation-messages-container .error-message, .confirmation-messages-container .success-message {
   font-size: 1.2rem;
   text-align: left;
@@ -142,12 +161,16 @@ section {
 }
 
 .confirmation-messages-container .success-message {
+  position: absolute;
+  top: -3px;
   line-height: 2rem;
   color: var(--primary-color);
 }
 
 footer {
+  height: 25px;
   background-color: #fff5f5;
+  padding-top: 10px;
 }
 .attribution, .attribution a {
   font-weight: 400;
