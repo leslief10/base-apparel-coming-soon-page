@@ -29,12 +29,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/mobile-solution.png)
-![](./design/desktop-solution.png)
+![](../design/mobile-solution.png)
+![](../design/desktop-solution.png)
 
 ### Links
 
-- Live Site URL: [Base Apparel coming soon page]()
+- Live Site URL: [Base Apparel coming soon page](https://leslief10.github.io/base-apparel-coming-soon-page/)
 
 ## My process
 
